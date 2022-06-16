@@ -1,0 +1,468 @@
+<html>
+<body>
+<style>
+h1 {
+margin-left: 340px;
+font-family: Arial;
+}
+.Knopka1 {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient( white,navy);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Knopka2 {
+    text-decoration: none;
+    font-size: 20px;
+    color: navy;
+    background-image: linear-gradient(to right,white,gold);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Knopka3  {
+    text-decoration: none;
+    font-size: 20px;
+    color: blueviolet;
+    background-image: linear-gradient(to right,lightgreen,white,gold);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.Knopka4 {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: navy;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 0 0 orange;
+}
+
+.Knopka5 {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Knopka5:hover {
+box-shadow: 3px 5px 10px gold; 
+}
+
+.Knopka6 {
+    text-decoration: none;
+    font-size: 20px;
+    color: royalblue;
+    padding: 10px;
+border: 2px solid royalblue;
+box-shadow: 2px 2px 5px 0 slateblue;
+}
+
+.Knopka7 {
+  font-family: Helvetica;
+margin-left: 3spx;
+text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  color: #202125;
+  padding: 10px;
+  outline: 3px solid;
+  outline-color: rgba(71, 126, 232,0.5);
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.Knopka7:hover {
+  color: rgba(71, 126, 232, 0.7);
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 300px;
+}
+
+.Knopka8 {
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid royalblue;
+    background-color: white;
+    padding: 10px;
+    color: limegreen;
+    border-radius: 10px;
+}
+
+.Knopka8:hover {
+    background-color: royalblue;
+    transition: 2s linear;
+}
+
+.Knopka9 {
+    text-decoration: none;
+    font-size: 25px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px;
+    color: black;
+    border-radius: 10px;
+    transition: 2s linear;
+}
+
+.Knopka9:hover {
+    border: 2px solid black;
+    color: darkorange;
+    transition: 2s linear;
+    background-color: black;
+}
+
+.Knopka10 {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase; 
+    font-family: 'Roboto', Тahoma, sans-serif;
+    background: #337AB7;
+    cursor: pointer; 
+    border: 2px solid #BFE2FF;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.Knopka10-btn:hover,
+.Knopka10-btn:active,
+.Knopka10-btn:focus {
+    color: #FFF;
+}
+
+.Knopka10:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #2D6B9F;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+.Knopka10:hover:before,
+.Knopka10:active:before,
+.Knopka10:focus:before {
+    transform: translateX(0);
+}
+
+.Knopka11 {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: black;
+    cursor: pointer;
+    border: 2px solid gray;
+}
+.Knopka11:hover,
+.Knopka11:active,
+.Knopka11:focus {
+    color: white;
+}
+.Knopka11:after,
+.Knopka11:before {
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    background: gray;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.Knopka11:before {
+    top: -6px;
+}
+.Knopka11:hover:after,
+.Knopka11:hover:before,
+.Knopka11:active:after,
+.Knopka11:active:before,
+.Knopka11:focus:after,
+.Knopka11:focus:before {
+    width: 100%;
+    left: 0;
+}
+
+a.Knopka12 {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: #053852 -1px 1px, #053852 1px 1px, #053852 1px -1px, #053852 -1px -1px;
+  text-decoration: none;
+  user-select: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 7px;
+  background: #053852 repeating-linear-gradient(135deg, #053852, #053852 10px, #1679ad 10px, #1679ad 20px, #053852 20px);
+  box-shadow:
+   inset -2px -2px rgba(0,0,0,.3),
+   inset 2px 2px rgba(255,255,255,.3);
+  transition: background-position 999999s, color 999999s, text-shadow 999999s;
+}
+a.Knopka12:hover, a.button12:focus {
+  text-shadow: #0175b1 -1px 1px, #0175b1 1px 1px, #0175b1 1px -1px, #0175b1 -1px -1px;
+  background: #0175b1 repeating-linear-gradient(135deg, #0175b1, #0175b1 10px, #8fd2f5 10px, #8fd2f5 20px, #0175b1 20px) no-repeat;
+  background-size: 1000% 100%;
+}
+a.Knopka12:hover {
+  background-position: 0 0;
+
+}Knopka12:focus {
+  color: rgba(255,255,255,0);
+  text-shadow: rgba(1,117,177,0) -1px 1px, rgba(1,117,177,0) 1px 1px, rgba(1,117,177,0) 1px -1px, rgba(1,117,177,0) -1px -1px;
+  background-position: 900% 0;
+  transition: background-position linear 600s, color .5s, text-shadow .5s;
+}
+a.Knopka12:after {
+  content: "загрузка\2026";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .3em .7em;
+  color: rgba(0,0,0,0);
+  text-shadow: none;
+  transition: 999999s;
+}
+a.Knopka12:focus:after {
+  color: #fff;
+  text-shadow: #0175b1 -1px 1px, #0175b1 1px 1px, #0175b1 1px -1px, #0175b1 -1px -1px;
+  transition: .5s;
+}
+
+a.Knopka13 {
+  <br>
+}
+a.Knopka13:hover:not(:active) {
+  background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+}
+a.Knopka13:active {
+  top: 1px;
+  background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
+
+.Knopka14 {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: -1px -1px #000;
+  user-select: none;
+  padding: 10px;
+  outline: none;
+  background-color: #000;
+  background-image: linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255,255,255,.7) 0%, rgba(255,255,255,.5) 50%, rgba(0,0,0,0) 50%);
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto;
+  background-position: 200% 0, 0 0;
+  box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+font-size: 20px;
+} 
+.Knopka14:active {
+  top: 1px;
+  box-shadow: none;
+}
+.Knopka14:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0;
+}
+ 
+.Knopka15 {
+border: 2px solid black;
+padding: 10px;
+color: black;
+font-size: 20px;
+text-decoration: none;
+}
+
+.Knopka15:hover {
+border: 2px solid darkorange;
+padding: 10px;
+color: darkorange;
+font-size: 20px;
+text-decoration: none;
+
+}
+
+a.Knopka16 {
+  display: inline-block;
+  font-family: arial,sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(68,68,68);
+  text-decoration: none;
+  user-select: none;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+}
+a.Knopka16:hover {
+  color: rgb(24,24,24);
+  border: 1px solid rgb(198,198,198);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+a.Knopka16:active {
+  color: rgb(51,51,51);
+  border: 1px solid rgb(204,204,204);
+  background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+
+.Knopka17 {
+	display: inline-flex;
+	margin: 10px;
+	text-decoration: none;
+	border: 2px solid #BFE2FF;
+	position: relative;
+	overflow: hidden;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 12px 30px;
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase; 
+	font-family: 'Roboto', Тahoma, sans-serif;
+	background: #337AB7;
+	transition: box-shadow 0.3s, transform 0.3s;
+	cursor: pointer;
+}
+.Knopka17:hover,
+.Knopka17:active,
+.Knopka17:focus {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+	color: #FFF;
+}
+.Knopka17:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(-45deg, transparent, rgba(191, 226, 255, 0.3), transparent);
+	transition: left 0.7s;
+}
+.Knopka17:hover:before,
+.Knopka17:active:before,
+.Knopka17:focus:before {
+	left: 100%;
+}
+
+.Knopka18 {
+  position: relative;
+  display: inline-block;
+  font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(245,245,245);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  text-decoration: none;
+  user-select: none;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: #0c9c0d linear-gradient(#82d18d, #0c9c0d);
+  box-shadow: inset #72de26 0 -1px 1px, inset 0 1px 1px #98ff98, #3caa3c 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
+.Knopka18:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.Knopka18:active {
+  top: 1px;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+  box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+@-webkit-keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+@keyframes pulsate {
+  50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+
+a.Knopka19 {
+  position: relative;
+  font-weight: bold;
+
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #cc5500;
+  user-select: none;
+  padding:.8em 2em;
+  outline: none;
+  border-radius: 1px;
+  background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31);
+  background-size: 100% 100%, auto;
+  background-position: 50% 50%;
+  box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+  transition: 0.2s;
+}
+a.Knopka19:hover {
+  background-size: 140% 100%, auto;
+}
+a.Knopka19:active {
+  top: 1px;
+  color: #ffdead;
+  box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, 0 10px 10px -9px #000;
+}
+</style>
+<h1>Нажми на кнопку и <br>будет доступен код!</br></h1>
+<a class="Knopka1" href="Knopka1.html"><b>Кнопка</b></a>
+<a class="Knopka2" href="Knopka2.html"><b>Кнопка</b></a>
+<a class="Knopka3" href="Knopka3.html"><b>Кнопка</b></a>
+<a class="Knopka4" href="Knopka4.html"><b>Кнопка</b></a>
+<a class="Knopka5" href="Knopka5.html"><b>Кнопка</b></a>
+<a class="Knopka6" href="Knopka6.html"><b>Кнопка</b></a>
+<a class="Knopka7" href="Knopka7.html"><b>Кнопка</b></a>
+<a class="Knopka8" href="Knopka8.html"><b>Кнопка</b></a>
+<a class="Knopka9" href="Knopka9.html"><b>Кнопка</b></a>
+<a class="Knopka10" href="Knopka10.html"><b>Кнопка</b></a>
+<a class="Knopka11" href="Knopka11.html"><b>Кнопка</b></a>
+<a class="Knopka12" href="Knopka12.html"><b>Кнопка</b></a>
+<a class="Knopka14" href="Knopka14.html"><b>Кнопка</b></a>
+<a class="Knopka15" href="Knopka15.html"><b>Кнопка</b></a>
+<a class="Knopka16" href="Knopka16.html"><b>Кнопка</b></a>
+<a class="Knopka17" href="Knopka17.html"><b>Кнопка</b></a>
+<a class="Knopka18" href="Knopka18.html"><b>Кнопка</b></a>
+<a class="Knopka19" href="Knopka19.html"><b>Кнопка</b></a>
+</body>
+</html>
